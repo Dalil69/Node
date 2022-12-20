@@ -17,11 +17,36 @@ for (let u = 1; u < nombres.length; u++) {
 console.log(max)
 
 //3 Écrivez une fonction qui prend une chaîne de caractères et renvoie une nouvelle chaîne de caractères dont toutes les voyelles ont été supprimées.
-const p = 'zugdaugquksdusdhui'
+const p = 'mots'
 
-console.log(p.replace('a', ''));
-console.log(p.replace('e', ''))
-console.log(p.replace('i', ''))
-console.log(p.replace('o', ''))
-console.log(p.replace('u', ''))
-console.log(p.replace('y', ''))
+console.log(p.replace("o", ''));
+
+//4 Écrivez une fonction qui prend un tableau de chaînes de caractères et renvoie un tableau de chaînes de caractères triées par ordre alphabétique.
+var a = ["bonjour", "aurevoir", "salut"]
+var m = a.sort();
+console.log(m);
+
+//5 Écrivez une fonction qui prend un nombre en argument et renvoie une chaîne de caractères représentant ce nombre en mots. Par exemple, si l'entrée est 42, la fonction doit retourner "quarante-deux".
+
+
+
+
+
+
+//6 Écrivez une fonction qui prend un tableau d'objets et un nom de propriété et renvoie un tableau des valeurs de cette propriété dans chaque objet.
+
+const objectArray = [
+  {firstname : "John", lastname: "Doe"},
+  {firstname : "John", lastname: "Doe"},
+  {firstname : "John", lastname: "Doe"},
+  {firstname : "John", lastname: "Doe"},
+  {firstname : "John", lastname: "Doe"},
+  {firstname : "John", lastname: "Doe"},
+
+]
+
+function getPropertyValues( objArray, propName) {
+  return objArray.map(obj => obj[propName]);
+}
+
+console.log(getPropertyValues(objectArray, 'lastname'));
